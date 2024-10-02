@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#titulo {
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+#tablero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 80vh;
+}
+
+.fila {
+    display: flex;
+}
+
+.casilla {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    margin: 1px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    background-color: #F5F5F5;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    border-radius: 1px;
+    border: 2px solid #ccc;
+}
+
+#botones button {
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #ccc;
+    border: 3px solid white;
+}
+
+.casilla.bandera::after {
+    content: '🚩';
+    font-size: 15px;
+}
+
+.casilla.numero1 {
+    color: blue;
+}
+
+.casilla.numero2 {
+    color: green;
+}
+
+.casilla.numero3 {
+    color: red;
+}
+
+.casilla.numero4 {
+    color: purple;
+}
+
+.casilla.numero5 {
+    color: orange;
+}
+
+.casilla.numero6 {
+    color: brown;
+}
+
+#tam {
+    color: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
